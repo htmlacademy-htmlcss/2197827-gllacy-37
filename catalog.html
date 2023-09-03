@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy:Каталог Глейси</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <header class="page-header">
+    <a class="logo" href="index.html" aria-current="page">
+      <img class="logo-gllacy" src="/images/logo-gllacy.svg" width="137" height="56" alt="Логотип магазина Глэйси.">
+    </a>
+    <nav class="header-navigation">
+      <ul class="navigation-list list-reset">
+        <li class="navigation-item">
+          <div class="dropdown">
+            <button type="button" data-toggle="dropdown" class="button dropbtn dropdown-toggle">
+              Каталог
+            </button>
+            <ul class="dropdown-content">
+              <li><a class="dropdown-link" href="#">Новинки</a></li>
+              <li class="divider"></li>
+              <li><a class="dropdown-link" href="#">Сливочное</a></li>
+              <li><a class="dropdown-link" href="#">Щербеты</a></li>
+              <li><a class="dropdown-link" href="#">Фруктовый лед</a></li>
+              <li><a class="dropdown-link" href="#">Мелорин</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О компании</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header-navigation">
+      <ul class="navigation-list list-reset">
+        <li class="navigation-item">
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        </li>
+        <li class="navigation-item">
+          <button class="button search-button">
+          </button>
+          <span class="visually-hidden">Поиск.</span>
+        </li>
+        <li class="navigation-item">
+          <button class="button login-button">
+            Вход
+          </button>
+        </li>
+        <li class="navigation-item">
+          <button class="button basket-button">
+            <span class="visually-hidden">Корзина.</span>
+            2 товара
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container main-inner">
+    <section class="catalog">
+      <header class="catalog-header">
+        <h1 class="visually-hidden">Каталог магазина Глэйси.</h1>
+        <ul class="breadcrumbs list-reset">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-link-current" aria-current="page" href="#">Сливочное мороженое</a>
+          </li>
+        </ul>
+        <h2 class="title catalog-title">Сливочное мороженое</h2>
+      </header>
+      <h3 class="visually-hidden">Виды сливочного мороженого с фильтрами.</h3>
+      <div class="catalog-filter">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-group select-group">
+            <legend class="filter-title">Сортировка:</legend>
+            <select class="sorting-select">
+              <option value="top" selected>по популярности</option>
+              <option value="price">по цене</option>
+              <option value="rating">по рейтингу</option>
+            </select>
+          </fieldset>
+          <fieldset class="filter-group filter-group-range">
+            <legend class="filter-title">Цена: 100 ₽ – 500 ₽</legend>
+            <div class="range-scale">
+              <div class="range-bar">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter-group filter-group-check">
+            <legend class="filter-title">Жирность:</legend>
+            <ul class="filter-list control-list list-reset">
+              <li class="control-item">
+                <label class="control">
+                  <input class="control-input visually-hidden" type="checkbox" name="zero">
+                  <span class="control-mark"></span>
+                  <span class="control-label">0%</span>
+                </label>
+              </li>
+              <li class="control-item">
+                <label class="control">
+                  <input class="control-input visually-hidden" type="checkbox" name="ten" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">до 10%</span>
+                </label>
+              </li>
+              <li class="control-item">
+                <label class="control">
+                  <input class="control-input visually-hidden" type="checkbox" name="thirty">
+                  <span class="control-mark"></span>
+                  <span class="control-label">до 30%</span>
+                </label>
+              </li>
+              <li class="control-item">
+                <label class="control">
+                  <input class="control-input visually-hidden" type="checkbox" name="above thirty">
+                  <span class="control-mark"></span>
+                  <span class="control-label">выше 30%</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+        </form>
+    </section>
+  </main>
+
+
+
+
+
+  <footer>
+    <ul class="social-list list-reset">
+      <li class="social-item">
+        <a class="social-button" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Telegram.</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-button" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Vkontakte.</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-button" href="https://www.youtube.com/user/htmlacademy">
+          <span class="visually-hidden">Youtube.</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="provider-list list-reset">
+      <li class="provider-list-item">
+        <span class="provider-text active">Для поставщиков</span>
+      </li>
+      <li class="provider-list-item">
+        <span class="provider-text active">О производстве</span>
+      </li>
+      <li class="provider-list-item">
+        <span class="provider-text active">Наши документы</span>
+      </li>
+      <li class="provider-list-item">
+        <span class="provider-text active">Экологические стандарты</span>
+      </li>
+    </ul>
+    <figure>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/"></a>
+      <figcaption class="htmlacademy-text">Сделано в <a class="htmlacademy-link">.html academy</a> © 2021</figcaption>
+    </figure>
+  </footer>
+
+  <body>
+
+</html>

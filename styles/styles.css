@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 1366px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1170px;
+  font-family: "Inter", "Arial", sans-serif;;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.main-container {
+   flex-grow: 1;
+}
+
+.page-header {
+  display: flex;
+  padding: 24px 0 24px 0;
+  align-items: center;
+}
+
+.header-navigation {
+  margin-right: 164px;
+}
+
+.header-navigation:last-child {
+  margin-right: 0;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login-list {
+  gap: 16px;
+}
+
+.none {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-link {
+  display: block;
+  line-height: 16px;
+  color: #2D3440;;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 16px;
+}
+
+.logo {
+  margin-right: 16px;
+}
+
+.button {
+  display: inline-block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Inter";
+  text-align: center;
+  color: #2D3440;
+  text-decoration: none;
+  background-color: #FCFCFC;
+}
+
+.header-button {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+  border: none;
+}
+
+.search-button {
+  border-radius: 50%;
+  padding: 9px 9px 5px 9px;
+}
+
+.login-button {
+  padding: 6px 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.contacts-phone {
+  padding: 6px 0 6px 0;
+  font-weight: 700;
+}
+
+.dropbtn {
+  padding: 8px 38px 8px 16px;
+  background-color: #FEAFC3;
+  border: none;
+
+
+}
